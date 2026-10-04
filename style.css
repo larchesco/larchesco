@@ -1,0 +1,94 @@
+body {
+    background-color: #0b0b0d; /* Ультра-темный геймерский фон */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Кнопки переключения языков */
+.lang-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #a0a0a5;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Стили главного заголовка */
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #646469;
+    margin-bottom: 40px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 340px;
+}
+
+/* Индивидуальные стили геймерских кнопок */
+.social-link {
+    display: block;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+}
+
+/* Эффекты наведения (Ховеры) для каждой платформы */
+.social-link:hover {
+    color: #000000;
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Специальные неоновые рамки при наведении для ключевых стрим-платформ */
+.kick:hover { box-shadow: 0 0 25px rgba(83, 244, 77, 0.4); border-color: #53f44d; }
+.twitch:hover { box-shadow: 0 0 25px rgba(145, 70, 255, 0.4); border-color: #9146ff; }
+.yt:hover { box-shadow: 0 0 25px rgba(255, 0, 0, 0.4); border-color: #ff0000; }
