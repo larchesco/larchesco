@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Google Analytics (Официальный счетчик посещений для Larchesco) -->
+    <script async src="https://googletagmanager.com"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TF8R2Y94N3');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Larchesco | Official Hub & Game</title>
+    <title>Larchesco | Official Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,11 +23,11 @@
         <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
     </div>
 
-    <!-- Твой фирменный заголовок сайта ссылок -->
+    <!-- Твой фирменный заголовок -->
     <h1>LARCHESCO</h1>
     <div class="subtitle" id="sub-text">Blah, blah, blah – Larchesco</div>
 
-    <!-- ТВОИ КНОПКИ ДЛЯ ССЫЛОК (Faceit добавлен!) -->
+    <!-- ТВОИ ЧИСТЫЕ ССЫЛКИ БЕЗ ГОНКИ -->
     <div class="links-container">
         <a href="https://faceit.com" target="_blank" class="social-link faceit">🧡 FACEIT Profile</a>
         <a href="https://kick.com" target="_blank" class="social-link kick">🟢 Kick Stream</a>
@@ -28,36 +37,6 @@
         <a href="https://t.me" target="_blank" class="social-link" id="link-tg">✈️ Telegram Channel</a>
     </div>
 
-    <!-- РАЗДЕЛИТЕЛЬ ДЛЯ ИГРЫ СНИЗУ -->
-    <h2 style="margin-top: 50px; letter-spacing: 2px; font-size: 1.5rem;" id="game-title">LARCHESCO RACING</h2>
-    <div class="score-board"><span id="score-text">SPEED SCORE</span>: <span id="score">0</span></div>
-
-    <div class="difficulty-container" id="diff-box">
-        <button id="diff-easy" class="diff-btn active" onclick="selectDifficulty('easy')">Easy</button>
-        <button id="diff-medium" class="diff-btn" onclick="selectDifficulty('medium')">Medium</button>
-        <button id="diff-hard" class="diff-btn" onclick="selectDifficulty('hard')">Hard</button>
-    </div>
-
-    <div id="game-zone">
-        <div id="player-car"></div>
-        <div id="game-over-screen">
-            <h2 id="go-title">GAME OVER</h2>
-            <p id="go-result">Your Score: 0</p>
-        </div>
-    </div>
-
-    <button id="start-btn" onclick="startGame()">START RACE</button>
-
-    <div class="controls">
-        <button class="control-btn" id="btn-left">◀</button>
-        <button class="control-btn" id="btn-right">▶</button>
-    </div>
-
-    <div class="leaderboard-container">
-        <div class="lb-title" id="lb-title-text">WORLD TOP 3</div>
-        <div id="leaderboard-rows"></div>
-    </div>
-
-    <script src="script.js?v=9"></script>
+    <script src="script.js?v=10"></script>
 </body>
 </html>
